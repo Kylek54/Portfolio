@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>VCT Scene Builder</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="componentsarea">
+            <img id="door" src="images/door.png">
+
+            <img id="window1" src="images/window.png">
+            <img id="window2" src="images/window.png">
+            <img id="bush" src="images/bush.png">
+
+            <button id="up">Up</button>
+            <button id="down">Down</button>
+            <button id="left">Left</button>
+            <button id="right">Right</button>
+
+            <button id="reset">Reset</button>
+            <button id="done">Done</button>
+        </div>
+
+        <div id="scene">
+
+            <img src="images/house.jpg" id="house" />
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            var selectedcomponent;
+
+            $("#componentsarea img").click(function() {
+                selectedcomponent = this;
+                $("#componentsarea img").removeClass("selected");
+                $(selectedcomponent).addClass("selected");
+
+            });
+
+            $("#done").click(function() {
+                $("#componentsarea img").removeClass("selected");
+                selectedcomponent = clear;
+
+            });
+            $("#right").click(function() {
+                $(selectedcomponent).animate({
+                    left: '+=30px'
+                });
+            });
+            $("#left").click(function() {
+                $(selectedcomponent).animate({
+                    left: '-=30px'
+                });
+            });
+            $("#down").click(function() {
+                $(selectedcomponent).animate({
+                    top: '+=30px'
+                });
+            });
+            $("#up").click(function() {
+                $(selectedcomponent).animate({
+                    top: '-=30px'
+                });
+            });
+            $("#reset").click(function() {
+                $("#componentsarea img").animate({
+                    top: '0',
+                    left: '0'
+                });
+            })
+        });
+    </script>
+</body></html>

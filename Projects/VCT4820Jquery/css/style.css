@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #D6CCA9
+}
+
+article {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+}
+
+button {
+    width: 200px;
+    padding: 5px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    margin: 5px;
+
+}
+
+h2 {
+    margin-top: 20px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'MedievalSharp', cursive;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+#fin_sg_pri {
+    margin-bottom: 30px;
+}
+
+#fin_sg_exp {
+    margin-bottom: 30px;
+}

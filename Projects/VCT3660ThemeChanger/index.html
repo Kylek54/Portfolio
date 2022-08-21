@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Shadowlands Covenants</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body id="back">
+    <header>
+
+        <h1><a onclick="base()">Shadowlands Covenants</a></h1>
+
+        <div id="buttons">
+            <button type="button" onclick="kyrian()">Kyrian</button>
+            <button type="button" onclick='necrolords()'>Necrolords</button>
+            <button type="button" onclick='nightfae()'>Night Fae</button>
+            <button type="button" onclick='venthyr()'>Venthyr</button>
+        </div>
+
+    </header>
+    <main>
+
+        <h2 id="textToChange">Select a Covenant!</h2>
+        <img id="myImage" src="img/or.jpg" style="width:720px; height: 480px;">
+        <p id="subtext">In the Shadowlands, each zone will have one of four Covenants: the Kyrian, Venthyr, Necrolord or Night Fae. You'll be introduced to them through the Shadowlands story and at max level, you'll get to join one of them and get access to their rewards, including a class-specific Covenant ability, a Covenant movement ability, unique transmogs and more!</p>
+
+    </main>
+
+    <script>
+        function base() {
+            document.getElementById("textToChange").innerHTML = "Select a Covenant!";
+            document.getElementById('myImage').src = 'img/or.jpg';
+            document.getElementById("subtext").innerHTML = "In the Shadowlands, each zone will have one of four Covenants: the Kyrian, Venthyr, Necrolord or Night Fae. You'll be introduced to them through the Shadowlands story and at max level, you'll get to join one of them and get access to their rewards, including a class-specific Covenant ability, a Covenant movement ability, unique transmogs and more!";
+            document.body.style.backgroundImage = "url(s)";
+            document.getElementById("textToChange").style.color = "rgb(240, 240, 240)";
+        }
+
+    </script>
+
+    <script>
+        function kyrian() {
+            document.getElementById("textToChange").innerHTML = "Kyrian";
+            document.getElementById('myImage').src = 'img/ky.jpg';
+            document.getElementById("subtext").innerHTML = "Ordered and purposeful, the Kyrian are called to lives of eternal service. The Kyrian value humility, righteousness, service, and virtue. Those who seek out the Kyrian who aren't yet ready to assume roles to eternal service unburden their souls through meditation and reflection to gain renewed understanding.";
+            document.getElementById("back").style.backgroundImage = "url('img/ky.png')";
+            document.getElementById("textToChange").style.color = "lightblue";
+        }
+
+    </script>
+
+    <script>
+        function necrolords() {
+            document.getElementById("textToChange").innerHTML = "Necrolords";
+            document.getElementById('myImage').src = 'img/nl.jpg';
+            document.getElementById("subtext").innerHTML = "Unrelenting and unyielding, the Necrolords are the military arm of the Shadowlands. They can be ruthless, and value all flavors of strength and power -- mental, emotional, and physical. Expect to be sorely tested to join their ranks, as the Necrolords believe in the survival of the fittest, meaning those who can't excel deserve failure and rejection. This can lead to some interpreting Maldraxxus as a realm of evil, but this is not necessarily true. Power, not philosophy, rules here.";
+            document.getElementById("back").style.backgroundImage = "url('img/nl.png')";
+            document.getElementById("textToChange").style.color = "green";
+        }
+
+    </script>
+
+    <script>
+        function nightfae() {
+            document.getElementById("textToChange").innerHTML = "Night Fae";
+            document.getElementById('myImage').src = 'img/nf.jpg';
+            document.getElementById("subtext").innerHTML = "The Night Fae represents the autumn and winter cycles of the Wheel of Life -- the cycle of death and rebirth that comes to all parts of nature. They serve in a similar capacity to the Kyrian to powerful nature souls, guiding them from life to their realms for eventual rest and rebirth. The realms of the Night Fae are the mirror to the Emerald Dream, and parts of their realms are linked strongly to the Drust. Souls with strong ties to the natural world can earn rebirth through this reconnection to all aspects of nature.";
+            document.getElementById("back").style.backgroundImage = "url('img/nf.png')";
+            document.getElementById("textToChange").style.color = "rgb(0,120,250)";
+        }
+
+    </script>
+
+    <script>
+        function venthyr() {
+            document.getElementById("textToChange").innerHTML = "Venthyr";
+            document.getElementById('myImage').src = 'img/vt.jpg';
+            document.getElementById("subtext").innerHTML = "The vampiric Venthyr serve Shadowlands as those who seek out those souls weighed down by the burdens of their flaws -- pride, rapaciousness, greed, apathy. Without the Venthyr to purge them of these burdens and allow them to atone, these souls might have been sentenced to an eternity in The Maw as irredeemable, but for the spark of possible redemption found within them. The Venthyr prepare these souls for one of two fates -- learning to harness their strengths to become a Punisher for the Covenant or lighten their souls to move on to another Covenant to further their eternal journey.";
+            document.getElementById("back").style.backgroundImage = "url('img/vt.png')";
+            document.getElementById("textToChange").style.color = "rgb(250,70,70)";
+        }
+
+    </script>
+
+</body>
+
+</html>

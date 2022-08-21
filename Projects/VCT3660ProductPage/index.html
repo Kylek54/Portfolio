@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Example Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <main>
+        <div id="logo"><img src="images/small/unnamed.png" height="100px"> </div>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Men's</li>
+                <li>Women's</li>
+                <li>Boy's</li>
+                <li>Girl's</li>
+                <li>Gender Neutral</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+
+        <h2>Product Name</h2>
+
+        <div id="product-grid">
+
+            <div id="gal1">
+                <a class="product-image1" href="#" data-image="images/small/image1.png" data-zoom-image="images/large/image1.jpg">
+                    <img id="img_01" src="images/thumb/image1.jpg" />
+                </a>
+
+                <a class="product-image2" href="#" data-image="images/small/image2.jpg" data-zoom-image="images/large/image1.jpg">
+                    <img id="img_01" src="images/thumb/image2.jpg" />
+                </a>
+
+                <a class="product-image3" href="#" data-image="images/small/image3.jpg" data-zoom-image="images/large/image1.jpg">
+                    <img id="img_01" src="images/thumb/image3.jpg" />
+                </a>
+
+
+                <a class="product-image4" href="#" data-image="images/small/image4.png" data-zoom-image="images/large/image1.jpg">
+                    <img id="img_01" src="images/thumb/image4.jpg" />
+                </a>
+            </div>
+            <img class="product-preview" id="img_01" src="images/small/image1.jpg" data-zoom-image="images/large/image1.jpg" />
+            <div class="description">
+                <div class="tab description">
+                    <input type="radio" id="tab-1" name="tab-group-1" checked>
+                    <label for="tab-1">White</label>
+
+                    <div class="content">
+                        56% Cotton, 38% Modal, 6% Spandex
+                        Imported
+                        Machine Wash
+                        A wardrobe must-have, this pack of two crewneck tees features a comfortable cotton blend and a straight hem for easy, everyday wear
+                        Everyday made better: we listen to customer feedback and fine-tune every detail to ensure quality, fit, and comfort
+                        Check out more from Amazon Essentials by visiting amazon.com/amazonessentials
+                        Model is 5'9" and wearing size Small
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input type="radio" id="tab-2" name="tab-group-1">
+                    <label for="tab-2">Grey</label>
+
+                    <div class="content">
+                        100% Cotton
+                        Imported
+                        Machine Wash
+                        Short-sleeve classic tee featuring ribbed crew neckline
+                        Pre-shrunk for fit
+                        4.5-ounce ring-spun cotton
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input type="radio" id="tab-3" name="tab-group-1">
+                    <label for="tab-3">Black</label>
+
+                    <div class="content">
+                        100% Cotton
+                        MEN'S T-SHIRTS - 100% Pre-Shrunk Cotton
+                        DURABLE & STYLISH - Taped Neck and Shoulders with Double-needle Sleeves and Hem
+                        AVAILABLE IN VARIETY OF COLORS - Black, White and Navy Blue
+                        MEN'S T-SHIRTS BENEFITS - 5.3 oz. Heavy Cotton
+                        PROUDLY PRINTED AND SHIPPED FROM USA - Only one color decoration allowed. Customized items are protected by Amazon’s Custom Return policy.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>Related Products</h2>
+
+        <div id="related-grid">
+
+            <div class="related-image1"> <img class="related-img" src="images/large/1586503840-9593820395e9020a0e14278-32440655.jpg"> </div>
+            <div class="related-image2"> <img class="related-img" src="images/large/attachment_109995677-e1565700648287.jpeg"></div>
+            <div class="related-image3"> <img class="related-img" src="images/large/graphicriver-cQiWNEUR-tshirt-mockup-urban-inline-image-preview-source%20copy.jpg"></div>
+            <div class="related-image4"> <img class="related-img" src="images/large/montserrat-t-shirt-font.jpeg"></div>
+            <div class="related-image5"> <img class="related-img" src="images/large/phc-street-style-tyler-joe-day-2-103-1571330486.jpg"></div>
+
+        </div>
+
+    </main>
+
+    <script src='js/jquery-1.8.3.min.js'></script>
+    <script src='js/jquery.elevatezoom.js'></script>
+    <script>
+        $("#img_01").elevateZoom({
+            zoomType: 'inner',
+            gallery: 'gal1',
+            cursor: 'pointer',
+            galleryActiveClass: 'active',
+            imageCrossfade: true,
+            loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif'
+        });
+        $("#img_01").bind("click", function(e) {
+            var ez = $('#img_01').data('elevateZoom');
+            $.fancybox(ez.getGalleryList());
+            return false;
+        });
+
+    </script>
+</body>
+
+</html>

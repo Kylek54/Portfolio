@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+main {
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: repeat(16, 20px);
+    grid-template-columns: repeat(16, 20px);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+main div {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.colorpick {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.colorpick * {
+    margin: .9vw auto 0vw;
+}

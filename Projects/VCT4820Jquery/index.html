@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JQuery Example</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <article>
+        <h2>Cleric</h2>
+        <h3>Domains</h3>
+        <button id="dom_life">Life</button>
+        <button id="dom_light">Light</button>
+        <button id="dom_trick">Trickery</button>
+    </article>
+    <article>
+        <h3>Main Stats</h3>
+        <button id="ms_str">Strength</button>
+        <button id="ms_dex">Dexterity</button>
+        <button id="ms_con">Consitution</button>
+        <button id="ms_int">Intellegence</button>
+        <button id="ms_wis">Wisdom</button>
+        <button id="ms_cha">Charisma</button>
+    </article>
+    <article>
+        <h3>Skills</h3>
+        <button id="sk_ath">Athletics (STR)</button>
+        <button id="sk_acr">Acrobatics (DEX)</button>
+        <button id="sk_sle">Sleight of Hand(DEX)</button>
+        <button id="sk_ste">Stealth (DEX)</button>
+        <button id="sk_arc">Arcana (INT)</button>
+        <button id="sk_his">History (INT)</button>
+        <button id="sk_inv">Investigation (INT)</button>
+        <button id="sk_nat">Nature (INT)</button>
+        <button id="sk_rel">Religion (INT)</button>
+        <button id="sk_ani">Animal Handling (WIS)</button>
+        <button id="sk_ins">Insight (WIS)</button>
+        <button id="sk_med">Medicine (WIS)</button>
+        <button id="sk_perc">Perception (WIS)</button>
+        <button id="sk_sur">Survival (WIS)</button>
+        <button id="sk_dec">Deception (CHA)</button>
+        <button id="sk_int">Intimidation (CHA)</button>
+        <button id="sk_perf">Performance (CHA)</button>
+        <button id="sk_pers">Persuasion (CHA)</button>
+    </article>
+    <article>
+        <h3>Spells</h3>
+        <button id="sp_ban">Bane</button>
+        <button id="sp_ble">Bless</button>
+        <button id="sp_com">Command</button>
+        <button id="sp_cre">Create or Destroy Water</button>
+        <button id="sp_cur">Cure Wounds</button>
+        <button id="sp_dete">Detect Evil and Good</button>
+        <button id="sp_detm">Detect Magic</button>
+        <button id="sp_gui">Guiding Bolt</button>
+        <button id="sp_hea">Healing Word</button>
+        <button id="sp_inf">Inflict Wounds</button>
+        <button id="sp_pro">Protection From Evil and Good</button>
+        <button id="sp_pur">Purify Food and Drink</button>
+        <button id="sp_san">Sanctuary</button>
+        <button id="sp_shi">Shield of Faith</button>
+    </article>
+    <article>
+        <h3>Starter Gear</h3>
+        <button id="sg_mac">Mace</button>
+        <button id="sg_war">Warhammer</button><br>
+
+
+        <button id="sg_sca">Scale Mail</button>
+        <button id="sg_lea">Leather Armor</button>
+        <button id="sg_cha">Chain Mail</button><br>
+
+
+        <button id="sg_lig">A Light Crossbow 20 bolts</button>
+        <button id="sg_sim">Any Simple Weapon</button><br>
+
+
+        <button id="sg_pri">Priest's Pack</button>
+        <button id="sg_exp">Explorer's Pack</button>
+        <br><br><br>
+
+        <article>
+            <h2>Cleric</h2><br><br>
+            <h3>Domains</h3>
+            <p id="fin_dom_life" class="fin_dom">Life</p>
+            <p id="fin_dom_light" class="fin_dom">Light</p>
+            <p id="fin_dom_trick" class="fin_dom">Trickery</p>
+        </article><br>
+        <article>
+            <h3>Main Stats</h3>
+            <p id="fin_ms_str" class="fin_ms">Strength</p>
+            <p id="fin_ms_dex" class="fin_ms">Dexterity</p>
+            <p id="fin_ms_con" class="fin_ms">Consitution</p>
+            <p id="fin_ms_int" class="fin_ms">Intellegence</p>
+            <p id="fin_ms_wis" class="fin_ms">Wisdom</p>
+            <p id="fin_ms_cha" class="fin_ms">Charisma</p>
+        </article><br>
+        <article>
+            <h3>Skills</h3>
+            <p id="fin_sk_ath" class="fin_sk">Athletics (STR)</p>
+            <p id="fin_sk_acr" class="fin_sk">Acrobatics (DEX)</p>
+            <p id="fin_sk_sle" class="fin_sk">Sleight of Hand(DEX)</p>
+            <p id="fin_sk_ste" class="fin_sk">Stealth (DEX)</p>
+            <p id="fin_sk_arc" class="fin_sk">Arcana (INT)</p>
+            <p id="fin_sk_his" class="fin_sk">History (INT)</p>
+            <p id="fin_sk_inv" class="fin_sk">Investigation (INT)</p>
+            <p id="fin_sk_nat" class="fin_sk">Nature (INT)</p>
+            <p id="fin_sk_rel" class="fin_sk">Religion (INT)</p>
+            <p id="fin_sk_ani" class="fin_sk">Animal Handling (WIS)</p>
+            <p id="fin_sk_ins" class="fin_sk">Insight (WIS)</p>
+            <p id="fin_sk_med" class="fin_sk">Medicine (WIS)</p>
+            <p id="fin_sk_perc" class="fin_sk">Perception (WIS)</p>
+            <p id="fin_sk_sur" class="fin_sk">Survival (WIS)</p>
+            <p id="fin_sk_dec" class="fin_sk">Deception (CHA)</p>
+            <p id="fin_sk_int" class="fin_sk">Intimidation (CHA)</p>
+            <p id="fin_sk_perf" class="fin_sk">Performance (CHA)</p>
+            <p id="fin_sk_pers" class="fin_sk">Persuasion (CHA)</p>
+        </article><br>
+        <article>
+            <h3>Spells</h3>
+            <p id="fin_sp_ban" class="fin_sp">Bane</p>
+            <p id="fin_sp_ble" class="fin_sp">Bless</p>
+            <p id="fin_sp_com" class="fin_sp">Command</p>
+            <p id="fin_sp_cre" class="fin_sp">Create or Destroy Water</p>
+            <p id="fin_sp_cur" class="fin_sp">Cure Wounds</p>
+            <p id="fin_sp_dete" class="fin_sp">Detect Evil and Good</p>
+            <p id="fin_sp_detm" class="fin_sp">Detect Magic</p>
+            <p id="fin_sp_gui" class="fin_sp">Guiding Bolt</p>
+            <p id="fin_sp_hea" class="fin_sp">Healing Word</p>
+            <p id="fin_sp_inf" class="fin_sp">Inflict Wounds</p>
+            <p id="fin_sp_pro" class="fin_sp">Protection From Evil and Good</p>
+            <p id="fin_sp_pur" class="fin_sp">Purify Food and Drink</p>
+            <p id="fin_sp_san" class="fin_sp">Sanctuary</p>
+            <p id="fin_sp_shi" class="fin_sp">Shield of Faith</p>
+        </article><br>
+        <article>
+            <h3>Starter Gear</h3>
+            <p id="fin_sg_mac" class="fin_sg">Mace</p>
+            <p id="fin_sg_war" class="fin_sg">Warhammer</p><br>
+
+
+            <p id="fin_sg_sca" class="fin_sg">Scale Mail</p>
+            <p id="fin_sg_lea" class="fin_sg">Leather Armor</p>
+            <p id="fin_sg_cha" class="fin_sg">Chain Mail</p><br>
+
+
+            <p id="fin_sg_lig" class="fin_sg">A Light Crossbow 20 bolts</p>
+            <p id="fin_sg_sim" class="fin_sg">Any Simple Weapon</p><br>
+
+
+            <p id="fin_sg_pri" class="fin_sg">Priest's Pack</p>
+            <p id="fin_sg_exp" class="fin_sg">Explorer's Pack</p>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    /*This line hides the new logo for the initial state.*/
+                    $(".fin_dom").hide();
+                    $(".fin_ms").hide();
+                    $(".fin_sk").hide();
+                    $(".fin_sp").hide();
+                    $(".fin_sg").hide();
+
+
+                    /*Domain Section */
+                    $("#dom_life").click(function() {
+                        $("#fin_dom_life").show();
+                        $("#fin_dom_light").hide();
+                        $("#fin_dom_trick").hide();
+                    });
+                    $("#dom_light").click(function() {
+                        $("#fin_dom_light").show();
+                        $("#fin_dom_life").hide();
+                        $("#fin_dom_trick").hide();
+                    });
+                    $("#dom_trick").click(function() {
+                        $("#fin_dom_trick").show();
+                        $("#fin_dom_light").hide();
+                        $("#fin_dom_life").hide();
+                    });
+
+                    /*Main Stats Section*/
+                    $("#ms_str").click(function() {
+                        $("#fin_ms_str").toggle();
+                    });
+                    $("#ms_dex").click(function() {
+                        $("#fin_ms_dex").toggle();
+                    });
+                    $("#ms_con").click(function() {
+                        $("#fin_ms_con").toggle();
+                    });
+                    $("#ms_int").click(function() {
+                        $("#fin_ms_int").toggle();
+                    });
+                    $("#ms_wis").click(function() {
+                        $("#fin_ms_wis").toggle();
+                    });
+                    $("#ms_cha").click(function() {
+                        $("#fin_ms_cha").toggle();
+                    });
+                    /*Skills Section*/
+                    $("#sk_ath").click(function() {
+                        $("#fin_sk_ath").toggle();
+                    });
+                    $("#sk_acr").click(function() {
+                        $("#fin_sk_acr").toggle();
+                    });
+                    $("#sk_sle").click(function() {
+                        $("#fin_sk_sle").toggle();
+                    });
+                    $("#sk_ste").click(function() {
+                        $("#fin_sk_ste").toggle();
+                    });
+                    $("#sk_arc").click(function() {
+                        $("#fin_sk_arc").toggle();
+                    });
+                    $("#sk_his").click(function() {
+                        $("#fin_sk_his").toggle();
+                    });
+                    $("#sk_inv").click(function() {
+                        $("#fin_sk_inv").toggle();
+                    });
+                    $("#sk_nat").click(function() {
+                        $("#fin_sk_nat").toggle();
+                    });
+                    $("#sk_rel").click(function() {
+                        $("#fin_sk_rel").toggle();
+                    });
+                    $("#sk_ani").click(function() {
+                        $("#fin_sk_ani").toggle();
+                    });
+                    $("#sk_ins").click(function() {
+                        $("#fin_sk_ins").toggle();
+                    });
+                    $("#sk_med").click(function() {
+                        $("#fin_sk_med").toggle();
+                    });
+                    $("#sk_perc").click(function() {
+                        $("#fin_sk_perc").toggle();
+                    });
+                    $("#sk_sur").click(function() {
+                        $("#fin_sk_sur").toggle();
+                    });
+                    $("#sk_dec").click(function() {
+                        $("#fin_sk_dec").toggle();
+                    });
+                    $("#sk_int").click(function() {
+                        $("#fin_sk_int").toggle();
+                    });
+                    $("#sk_perf").click(function() {
+                        $("#fin_sk_perf").toggle();
+                    });
+                    $("#sk_pers").click(function() {
+                        $("#fin_sk_pers").toggle();
+                    });
+                    /*Spells Section*/
+                    $("#sp_ban").click(function() {
+                        $("#fin_sp_ban").toggle();
+                    });
+                    $("#sp_ble").click(function() {
+                        $("#fin_sp_ble").toggle();
+                    });
+                    $("#sp_com").click(function() {
+                        $("#fin_sp_com").toggle();
+                    });
+                    $("#sp_cre").click(function() {
+                        $("#fin_sp_cre").toggle();
+                    });
+                    $("#sp_cur").click(function() {
+                        $("#fin_sp_cur").toggle();
+                    });
+                    $("#sp_dete").click(function() {
+                        $("#fin_sp_dete").toggle();
+                    });
+                    $("#sp_detm").click(function() {
+                        $("#fin_sp_detm").toggle();
+                    });
+                    $("#sp_gui").click(function() {
+                        $("#fin_sp_gui").toggle();
+                    });
+                    $("#sp_hea").click(function() {
+                        $("#fin_sp_hea").toggle();
+                    });
+                    $("#sp_inf").click(function() {
+                        $("#fin_sp_inf").toggle();
+                    });
+                    $("#sp_pro").click(function() {
+                        $("#fin_sp_pro").toggle();
+                    });
+                    $("#sp_pur").click(function() {
+                        $("#fin_sp_pur").toggle();
+                    });
+                    $("#sp_san").click(function() {
+                        $("#fin_sp_san").toggle();
+                    });
+                    $("#sp_shi").click(function() {
+                        $("#fin_sp_shi").toggle();
+                    });
+                    /*Starter Gear Section*/
+                    $("#sg_mac").click(function() {
+                        $("#fin_sg_mac").show();
+                        $("#fin_sg_war").hide();
+                    });
+                    $("#sg_war").click(function() {
+                        $("#fin_sg_war").show();
+                        $("#fin_sg_mac").hide();
+                    });
+
+                    $("#sg_sca").click(function() {
+                        $("#fin_sg_sca").show();
+                        $("#fin_sg_lea").hide();
+                        $("#fin_sg_cha").hide();
+                    });
+                    $("#sg_lea").click(function() {
+                        $("#fin_sg_lea").show();
+                        $("#fin_sg_sca").hide();
+                        $("#fin_sg_cha").hide();
+                    });
+                    $("#sg_cha").click(function() {
+                        $("#fin_sg_cha").show();
+                        $("#fin_sg_sca").hide();
+                        $("#fin_sg_lea").hide();
+                    });
+
+                    $("#sg_lig").click(function() {
+                        $("#fin_sg_lig").show();
+                        $("#fin_sg_sim").hide();
+                    });
+                    $("#sg_sim").click(function() {
+                        $("#fin_sg_sim").show();
+                        $("#fin_sg_lig").hide();
+                    });
+
+                    $("#sg_pri").click(function() {
+                        $("#fin_sg_pri").show();
+                        $("#fin_sg_exp").hide();
+                    });
+                    $("#sg_exp").click(function() {
+                        $("#fin_sg_exp").show();
+                        $("#fin_sg_pri").hide();
+                    });
+                });
+            </script>
+</body></html>

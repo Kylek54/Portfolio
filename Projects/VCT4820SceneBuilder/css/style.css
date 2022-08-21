@@ -1,0 +1,76 @@
+#wrapper {
+    display: flex;
+}
+
+#componentsarea img {
+    max-width: 250px;
+    display: block;
+    position: relative;
+    padding: 0 5vw;
+}
+
+.selected {
+    border: red solid 2px;
+}
+
+button {
+    width: 100px;
+    height: 70px;
+    padding: 0px;
+    font-size: 30px;
+    border: 2px solid;
+    font-family: sans-serif;
+    background-color: blanchedalmond
+}
+
+#scene {
+    position: absolute;
+    left: 500;
+    top: 66;
+    z-index: -99;
+}
+
+#done {
+    position: absolute;
+    top: 975;
+    left: 320;
+
+    width: 90px;
+    height: 50px;
+    font-size: 25px;
+}
+
+
+#reset {
+
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    top: 975;
+    left: 90;
+    font-size: 25px;
+}
+
+#up {
+    position: absolute;
+    top: 770;
+    left: 200;
+}
+
+#down {
+    position: absolute;
+    top: 890;
+    left: 200;
+}
+
+#left {
+    position: absolute;
+    top: 830;
+    left: 90;
+}
+
+#right {
+    position: absolute;
+    top: 830;
+    left: 310;
+}

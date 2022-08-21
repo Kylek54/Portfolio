@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <title>Octopus Activites - Font Change</title>
+</head>
+<body onload="pastText()">
+    <header><h2>OCTOPUS</h2><h3>activities</h3></header>
+ 
+    <main class="container">
+        <p id="past"></p>
+        <form id="myForm" autocomplete="off">
+            <input type="text" id="code" name="code" class="code" placeholder="Enter Code Here" autocomplete="off"><br>
+            <div class="submitcenter"><input type="submit" name="submit" class="submit" value="Submit" onclick="myFunction()"></div>
+        </form>
+
+
+    </main>
+    <p>font-size - Changes the size of the font <br>line-spacing - will change the space between lines of text<br><br><span class="bold">Example: "font-size: 15px;"</span></p>
+
+    <script>
+
+        function pastText(){
+        var x = localStorage.getItem("past")
+        
+
+        document.getElementById("past").innerHTML = x;
+
+
+    }
+        function myFunction() {
+        
+          var x = document.getElementById("myForm").elements[0].value;
+          var y = x
+          document.getElementById("past").innerHTML = x;
+          
+          localStorage.setItem("past", x);
+        }
+        
+        </script>
+</body>
+</html>

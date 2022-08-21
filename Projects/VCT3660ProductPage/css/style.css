@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#logo {
+    padding-top: 3em;
+}
+
+nav {
+    padding-top: 1em;
+}
+
+ul {
+    margin-top: 3%;
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.5rem;
+    font-family: monospace;
+    text-align: center;
+    padding-right: 3%;
+    display: inline;
+}
+
+main {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 2em;
+
+}
+
+#product-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-rows: 1fr;
+}
+
+.product-image1 {
+    grid-column: 1 / 1;
+    grid-row: 1
+}
+
+.product-image2 {
+    grid-column: 2 / 1;
+    grid-row: 2;
+}
+
+.product-image3 {
+    grid-column: 3 / 1;
+    grid-row: 3;
+}
+
+.product-image4 {
+    grid-column: 4 / 1;
+    grid-row: 4;
+}
+
+.product-preview {
+    grid-column: 2;
+    grid-row: 1 / 9;
+}
+
+#gal {
+    grid-column: 1;
+    grid-row: 1/10
+}
+
+.description {
+
+    grid-column: 3;
+    grid-row: 1 / 9;
+}
+
+.tabs {
+    position: relative;
+    min-height: 200px;
+    /* This part sucks */
+    clear: both;
+    margin: 25px 0;
+}
+
+.tab {
+    float: left;
+}
+
+.content {
+    position: absolute;
+    top: 388px;
+    left: 1083px;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    height: 210px;
+    width: 400px;
+}
+
+.tab label {
+    background: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+}
+
+.tab [type=radio] {
+    display: none;
+}
+
+[type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+
+}
+
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}
+
+#related-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+}
+
+.related-image1 {
+    grid-column: 1;
+
+    grid-row: 1;
+}
+
+.related-image2 {
+
+    grid-column: 2;
+
+    grid-row: 1;
+}
+
+.related-image3 {
+
+    grid-column: 3;
+
+    grid-row: 1 /1;
+}
+
+.related-image4 {
+
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.related-image5 {
+
+    grid-column: 5;
+}
+
+.related-img {
+    height: 140px;
+}

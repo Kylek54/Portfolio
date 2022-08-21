@@ -1,0 +1,120 @@
+/* Style for our header texts
+	* --------------------------------------- */
+h1 {
+    font-size: 5em;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: arial, helvetica;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered texts in each section
+	* --------------------------------------- */
+.section {
+    text-align: center;
+}
+
+
+/* Backgrounds will cover all the section
+	* --------------------------------------- */
+.section {
+    background-size: cover;
+}
+
+.slide {
+    background-size: cover;
+}
+
+/* Defining each section background and styles
+	* --------------------------------------- */
+#section0 {
+    background-image: url(../imgs/df.jpg);
+
+    padding: 4% 0 0 0;
+
+}
+
+
+#section1 {
+    background-image: url(../imgs/b.jpg);
+    padding: 6% 0 0 0;
+}
+
+#section2 {}
+
+#section3 {}
+
+#section4 {
+    background-image: url(../imgs/d.jpg);
+    padding: 6% 0 0 0;
+}
+
+#section5 {
+    background-image: url(../imgs/f.jpg);
+    padding: 6% 0 0 0;
+}
+
+#section6 {
+    background-image: url(../imgs/g.jpg);
+    padding: 6% 0 0 0;
+}
+
+#section7 {
+    background-image: url(../imgs/h.jpg);
+    padding: 6% 0 0 0;
+}
+
+
+
+
+
+
+/*Adding background for the slides
+	* --------------------------------------- */
+#slide1 {
+    background-image: url(../imgs/e.jpg);
+    padding: 0% 0 0 0;
+}
+
+#slide2 {
+    background-image: url(../imgs/e2.jpg);
+    padding: 0% 0 0 0;
+}
+
+#slide3 {
+    background-image: url(../imgs/c.jpg);
+    padding: 0% 0 0 0;
+}
+
+#slide4 {
+    background-image: url(../imgs/c2.jpg);
+    padding: 0% 0 0 0;
+}
+
+#slide5 {
+    background-image: url(../imgs/c3.jpg);
+    padding: 0% 0 0 0;
+}
+
+#slide6 {
+    background-image: url(../imgs/c4.jpg);
+    padding: 0% 0 0 0;
+}
+
+#slide7 {
+    background-image: url(../imgs/c5.jpg);
+    padding: 0% 0 0 0;
+}
+
+#slide8 {
+    background-image: url(../imgs/c6.jpg);
+    padding: 0% 0 0 0;
+}
+
+/* Bottom menu
+	* --------------------------------------- */
+#infoMenu li a {
+    color: #fff;
+}
