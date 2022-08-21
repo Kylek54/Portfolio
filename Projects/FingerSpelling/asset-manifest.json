@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Projects/FingerSpelling/static/css/main.ed5c4531.css",
+    "main.js": "/Projects/FingerSpelling/static/js/main.25643664.js",
+    "static/js/787.2ead5929.chunk.js": "/Projects/FingerSpelling/static/js/787.2ead5929.chunk.js",
+    "index.html": "/Projects/FingerSpelling/index.html",
+    "main.ed5c4531.css.map": "/Projects/FingerSpelling/static/css/main.ed5c4531.css.map",
+    "main.25643664.js.map": "/Projects/FingerSpelling/static/js/main.25643664.js.map",
+    "787.2ead5929.chunk.js.map": "/Projects/FingerSpelling/static/js/787.2ead5929.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed5c4531.css",
+    "static/js/main.25643664.js"
+  ]
+}
